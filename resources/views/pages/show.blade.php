@@ -27,7 +27,10 @@
         <div class="branding">
             <div class="container-fluid position-relative py-3">
                 <div class="logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon me-2" src="{{ asset('assets/img/site-logo.svg') }}" alt="logo" ><span class="logo-text">Jordan's Library</span></a></div>
+	                <div class="site-logo">
+                        <a class="navbar-brand" href="/">
+                        <img class="logo-icon me-2" src="{{ asset('assets/img/backIcon.png') }}" alt="logo" >
+                        <span class="logo-text ">Jordan's Library</span></a></div>
                 </div><!--//docs-logo-wrapper-->
 
             </div><!--//container-->

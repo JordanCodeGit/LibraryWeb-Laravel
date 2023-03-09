@@ -25,7 +25,7 @@
             background-size: cover;
             background-position: 50%;
             position: relative;
-            background-color: #14181d;
+            background-color: #7393B3;
             width: 100%;
             min-height: 100vh;
             overflow: auto;
@@ -46,7 +46,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <img class="col-lg-6 d-none d-lg-block" src="{{ asset('assets/img/jibraryLogooo.png') }}" alt="logo" >
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">

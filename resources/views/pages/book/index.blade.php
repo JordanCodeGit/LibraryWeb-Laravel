@@ -51,7 +51,11 @@
     </a>
 
     <a href="{{ route('export') }}">
-        <button class="btn btn-success mt-3">Download Book Report</button>
+        <button class="btn btn-success mt-3">Download Excel Report</button>
+    </a>
+
+    <a href="{{ route('createPDF') }}">
+        <button class="btn btn-danger mt-3">Download PDF Report</button>
     </a>
 
 

@@ -23,7 +23,8 @@ Route::get('/search', [HomeController::class, 'search'])->name('search');
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
     Route::resource('book', BookController::class);
-    Route::get('/export-book', [BookController::class, 'export_excel'])->name('export');
+    Route::get('/export-excel-book', [BookController::class, 'export_excel'])->name('export');
+    Route::get('/export-pdf-book', [BookController::class, 'createPDF'])->name('createPDF');
 });
 
 Auth::routes();

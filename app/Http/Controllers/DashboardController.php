@@ -11,7 +11,7 @@ class DashboardController extends Controller
     {
         $title = 'Dashboard';
         $cb = Book::count();
-        $cc = 6;
+        $cc = 10;
         $books = Book::all();
 
         return view('pages.dashboard', compact('title', 'cb', 'cc', 'books'));

@@ -42,11 +42,11 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     @guest
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ route('login') }}">Login</a>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ route('login') }}">Login (Admin Only)</a>
                         </li>
                     @else
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ route('logout') }}"
-                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout (Jordan Ang.)</a>
                         </li>
 
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

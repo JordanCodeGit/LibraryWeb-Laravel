@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreBookRequest;
 use Illuminate\Http\Request;
 use App\Models\Book;
+use PDF;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Exports\BookExport;
 use RealRashid\SweetAlert\Facades\Alert as SweetAlert;
@@ -75,7 +76,7 @@ class BookController extends Controller
     public function edit($id)
     {
         $book = Book::findorFail($id);
-        
+
         $title = 'Book';
 
         return view('pages.book.edit', compact('book', 'title'));
@@ -127,5 +128,14 @@ class BookController extends Controller
     public function export_excel()
     {
         return Excel::download(new BookExport, 'booksdata.xlsx');
+    }
+
+    public function createPDF()
+    {
+        $book = Book::all();
+
+        view()->share('book', $book);
+        $pdf = PDF::loadView('pages.book.pdf');
+        return $pdf->download('book.pdf');
     }
 }
