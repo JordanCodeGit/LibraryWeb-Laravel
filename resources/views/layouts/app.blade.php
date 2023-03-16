@@ -30,6 +30,7 @@
         }
     </style>
 
+    @stack('addonStyle')
 </head>
 
 <body id="page-top">
@@ -120,6 +121,7 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 
+    @stack('addonScript')
 </body>
 
 </html>

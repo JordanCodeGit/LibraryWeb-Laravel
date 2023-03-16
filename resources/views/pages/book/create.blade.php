@@ -36,7 +36,7 @@
         <label class="form-label">Publisher</label>
         <input type="text" class="form-control @error('publisher')
         is-invalid
-        @enderror"
+        @enderror" 
           name="publisher">
         @error('publisher')
           <div class="invalid-feedback">

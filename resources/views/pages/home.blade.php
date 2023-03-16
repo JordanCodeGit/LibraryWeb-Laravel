@@ -93,16 +93,16 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-2">
                 @foreach ($books as $book)
-                    <div class="col-lg-3 mt-5">
-                        <div class="card h-100 ">
+                    <div class="col-lg-3 mt-4">
+                        <div class="card h-100 shadow">
                             <img src="{{ asset('storage/' . $book->cover) }}" class="card-img-top"
                                 alt="jordan's library">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $book->title }}</h5>
                                 <p class="card-text">by {{ $book->author }}</p>
-                                <a href="{{ route('detail', $book->id) }}" class="btn btn-primary">Read more..</a>
+                                <a href="{{ route('detail', $book->id) }}" class="btn btn-primary rounded">Read more..</a>
                             </div>
                         </div>
                     </div>

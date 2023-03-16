@@ -120,7 +120,7 @@ class BookController extends Controller
 
         $book->delete();
 
-        SweetAlert::success('Success', 'Book successfully erased!');
+        SweetAlert::success('Success', 'Book successfully deleted!');
 
         return redirect()->route('book.index');
     }

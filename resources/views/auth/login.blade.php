@@ -25,7 +25,7 @@
             background-size: cover;
             background-position: 50%;
             position: relative;
-            background-color: #7393B3;
+            background-image: url("{{ asset('assets/img/library-img.jpg') }}");
             width: 100%;
             min-height: 100vh;
             overflow: auto;
@@ -35,7 +35,7 @@
 
 <body class="auth-container d-flex align-items-center justify-content-center">
 
-    <div class="container ">
+    <div class="container">
 
         <!-- Outer Row -->
         <div class="row justify-content-center">
